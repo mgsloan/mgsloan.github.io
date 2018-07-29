@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>mgsloan's blog</title>
+  <id>https://mgsloan.com/</id>
+  <icon>/favicon.png</icon>
+  <link href="https://mgsloan.com/writing" rel="alternate"/>
+  <link href="https://mgsloan.com/feed.xml" rel="self"/>
+  <author>
+    <name>Michael G Sloan</name>
+  </author>
+  <updated>2018-07-28T00:00:00Z</updated>
+  
+  <entry>
+    <title>GHCinception: Running GHCi in GHCi</title>
+    <id>https://mgsloan.com/posts/ghcinception</id>
+    <link href="https://mgsloan.com/posts/ghcinception" rel="alternate"/>
+    <updated>2018-07-28T00:00:00Z</updated>
+    <published>2018-07-28T00:00:00Z</published>
+    <summary>My patches were merged, allowing GHC to be loaded into GHCi and run!</summary>
+  </entry>
+  
+  <entry>
+    <title>A new website!</title>
+    <id>https://mgsloan.com/posts/new-site</id>
+    <link href="https://mgsloan.com/posts/new-site" rel="alternate"/>
+    <updated>2018-07-27T00:00:00Z</updated>
+    <published>2018-07-27T00:00:00Z</published>
+    <summary>A brief introduction to my new site, future plans, and how it works.</summary>
+  </entry>
+  
+</feed>
