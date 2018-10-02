@@ -8,7 +8,16 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2018-07-28T00:00:00Z</updated>
+  <updated>2018-10-01T00:00:00Z</updated>
+  
+  <entry>
+    <title>Computing comfortably at 30,000 feet</title>
+    <id>https://mgsloan.com/posts/comfortable-airplane-computing</id>
+    <link href="https://mgsloan.com/posts/comfortable-airplane-computing" rel="alternate"/>
+    <updated>2018-10-01T00:00:00Z</updated>
+    <published>2018-10-01T00:00:00Z</published>
+    <summary>How to use a laptop on an airline flight with decent ergonomics.</summary>
+  </entry>
   
   <entry>
     <title>GHCinception: Running GHCi in GHCi</title>
