@@ -18,7 +18,7 @@
     instance Num a =&gt; Semigroup (Product a)
       with a ~ Bool
     instance Semigroup b =&gt; Monoid (Maybe b)
-      with b ~ Product Bool</code></pre><h2 id="more-than-just-errors"><a href="#more-than-just-errors"></a>More than just errors</h2><p>It might also be quite useful to ask for an explanation when instances successfully resolve. Imagine if we could ask <abbr>GHCi</abbr> to explain such things! It might look like this:</p><div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> <span class="fu">:</span>explain <span class="dt">Ord</span> [<span class="dt">Maybe</span> <span class="dt">Int</span>]
+      with b ~ Product Bool</code></pre><h2 id="useful-for-more-than-just-errors"><a href="#useful-for-more-than-just-errors"></a>Useful for more than just errors</h2><p>It might also be quite useful to ask for an explanation when instances successfully resolve. Imagine if we could ask <abbr>GHCi</abbr> to explain such things! It might look like this:</p><div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> <span class="fu">:</span>explain <span class="dt">Ord</span> [<span class="dt">Maybe</span> <span class="dt">Int</span>]
 
 • <span class="dt">Ord</span> [<span class="dt">Maybe</span> <span class="dt">Int</span>]
   • <span class="dt">Ord</span> (<span class="dt">Maybe</span> <span class="dt">Int</span>)
