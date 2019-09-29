@@ -9,7 +9,7 @@
     Monoid (Maybe b)
   with
     a ~ Bool
-    b ~ Product Bool</code></pre><h2 id="alternative-no-with-clause"><a href="#alternative-no-with-clause"></a>Alternative: No "with" clause</h2><p>The "with" clause above defines how the type variables in the instances are being instantiated. This is nice because then the instance resolution trace looks like a list of instance heads. It seems clearer to avoid having type variables entirely, though:</p><pre><code>• No instance for (Monoid (Maybe (Product Bool))) arising from a use of ‘mempty’
+    b ~ Product Bool</code></pre><p>The "with" clause above defines how the type variables in the instances are being instantiated. This is nice because then the instance resolution trace looks like a list of instance heads.</p><h2 id="alternative-no-with-clause"><a href="#alternative-no-with-clause"></a>Alternative: No "with" clause</h2><p>Instead of including the <code>with</code> clauses, it seems less convoluted to substitute the variables with the types:</p><pre><code>• No instance for (Monoid (Maybe (Product Bool))) arising from a use of ‘mempty’
 • Due to no instance for (Num Bool) arising from superclass constraints:
     Num Bool =&gt;
     Semigroup (Product Bool) =&gt;
