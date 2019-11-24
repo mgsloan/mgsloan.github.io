@@ -6,6 +6,7 @@
     <style>
       body {
         background-size: contain;
+        margin: 0;
       }
 
       #agenda-frames {
@@ -27,15 +28,45 @@
       }
 
       .reminder {
-        display: none;
         font-size: 200%;
         position: absolute;
-        bottom: 1em;
-        border-radius: 0.5em;
-        background-color: #333;
-        color: #eee;
-        padding: 0.25em;
+        bottom: 64px;
       }
+
+      .reminder a {
+        color: white;
+      }
+
+      #focus, #work-focus, #priorities, .reminder {
+        display: none;
+        background: rgba(0.5, 0.5, 0.5, 0.3);
+        opacity: 0.9;
+        color: white;
+        margin: 32px;
+        padding: 32px;
+        border-radius: 32px;
+      }
+
+      #priorities {
+        position: absolute;
+        top: 128px;
+        font-family: sans-serif;
+      }
+
+      #priorities h1 {
+        font-size: 150%;
+      }
+
+      #priorities ul {
+        font-size: 125%;
+      }
+
+      #focus {
+        position: absolute;
+        font-size: 200%;
+        font-family: serif;
+      }
+
     </style>
 
   </head>
@@ -50,21 +81,6 @@
 //# sourceMappingURL=crypto-js.min.js.map</script>
 
     <script>
-      var todoistFrame = document.getElementById('todoist-frame');
-      var urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.has('work')) {
-        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2FToday%20%26%20%40Work';
-      } else {
-        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2Foverdue%20%26%20!assigned%20to%3A%20other%2C%20today%20%26%20!assigned%20to%3A%20other'
-      }
-
-      async function fetchApod() {
-        const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
-        const json = await response.json();
-        document.body.style.backgroundImage = 'url("' + json.hdurl + '")';
-      }
-      fetchApod();
-
       // Based on code from
       // https://github.com/robinmoisson/staticrypt/blob/38a3f5b297b56c580a65cb2cadeb0007be88fe49/cli/password_template.html
       var keySize = 256;
@@ -94,11 +110,11 @@
 
       var urlParams = new URLSearchParams(window.location.search);
       if (!urlParams.has('pass')) {
-      abort('Expected "pass" query parameter');
+        abort('Expected "pass" query parameter');
       }
 
       var passphrase = urlParams.get('pass'),
-          encryptedMsg = '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',
+          encryptedMsg = 'fb266b9e80c462c367c2d71045215cadae50ae6bf568b85e1782c451a03f7fb3acff100ba4d053e2c571df9aae02bc85b7dd7b3c425798863fa9b084569d13252Mp8yOez+7NbTV6OztbcMyxzWPwvrh4jlkXQ9mNR3oo8A4mOT0ZXQvL1xrAaoyTIuIgRec8vEn26zt+1Uf14ZHfwvMrxvylGG4xlOrpI4WYjaDt5kwxAqngv6vOuDTAoEI8OJq+0kVjFqIlFEhnBRUfBh6mSkgAN5rhb6g68aBoDBc9YdATy+1oZ77hZqP9VJoKx/1wnrkaaPIXZuf0WrBewruIfuvtA5aQt3Co08O3jXYE21ZTvjp7okx/aZL2BigsAZTMoktqckwXVzMXihg1oVMegvy10nUFcF0ZjypmnTEU1uL17WbWA4EG9nNok7+kJKamyHxqYaei7KM84HPmacOfz8k6SqZr6Cp5jjKDw2xOtpWRfW6Xh4Ts3W7VdNYVW/iCtyi8bcATnvJ8xAf+299MfQNjAhWDJu+i1BeBOi2NaCHh0SOQVxisuNzxNcNkuvsNoBCsh/QWIg8us16ymzbO9rMr3yEoRaeoPpsUccWyyqRPS1bYAasMajxsFkRypfREwsnyTdcgtvY5JnbLL9HLcaV5bvnykMP1yCS1pFfQtTZJW38+mO3heOnksk6thnPpr79XkH9u5INE1XKspSg9MAAf9RfalcCdllnCprMY0AzmP2YLZE9pf7hVzk/HDcV4okHgcVnODV22jmNNPAILhX8A69rlxl5pWGhLV9e/HDuuM3NBtyo6KIPGV65AnXKKilqquLYSMfyg/Rye06ScgBffBuvtYUDJtYXkrY8p7araJxSKsClJpWg62EPM9GR1XROmBjE9AH+WXES4MYcQdxMctHJEP3BkGx3SXDKqQa8J6smPCryMnirSkcS6j/o+3uOrV9A1npMJM1fA7X5P+rzPJ/tFBDGW41D97UQT4MNiJOAtcq50jtLSKMSYIA5eebfOTOQ5HEQzXX420qpi8YSS0B2/2YsXIkMRkjfaKNFYh6DseuSBNAyBCGG6vdIQqSYD7vbYxWH/owUj1B2VsMCqVCErWCxWpdRoHlTfx3VINAVULg4kurJ6y2fzsl+PlgpRpeuwF3tPIhxrjbGv2pkEvVLfYGyKo2aDcEyYD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',
           encryptedHMAC = encryptedMsg.substring(0, 64),
           encryptedHTML = encryptedMsg.substring(64),
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
@@ -113,9 +129,61 @@
       document.close()
 
       // After decrypting, display a random reminder
-      const reminders = document.getElementsByClassName('reminder');
+      const reminderClass = urlParams.has('work') ? 'work-reminder' : 'reminder';
+      const reminders = document.getElementsByClassName(reminderClass);
       const randomReminder = reminders[Math.floor(Math.random() * reminders.length)];
-      randomReminder.style.display = 'block';
+      randomReminder.style.display = 'inline-block';
+
+      const prioritiesDiv = document.getElementById('priorities');
+      const focusDiv = document.getElementById('focus');
+      const workFocusDiv = document.getElementById('work-focus');
+      if (urlParams.has('personal')) {
+        prioritiesDiv.style.display = 'inline-block';
+        focusDiv.style.display = 'inline-block';
+      } else if (urlParams.has('work')) {
+        workFocusDiv.style.display = 'inline-block';
+      } else {
+        // This case is for personal account at work.
+        workFocusDiv.style.display = 'inline-block';
+      }
+
+      var todoistFrame = document.getElementById('todoist-frame');
+      var urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('work')) {
+        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2FToday%20%26%20%40Work';
+      } else {
+        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2Foverdue%20%26%20!assigned%20to%3A%20other%2C%20today%20%26%20!assigned%20to%3A%20other'
+      }
+
+      async function getApodUrl() {
+        const today = new Date();
+        today.setHours(0,0,0,0);
+        // May as well be friendly to nasa's servers and try to only query apod once a day :)
+        const apodDayRaw = localStorage.getItem('apodDayRaw');
+        if (apodDayRaw) {
+          const apodDay = new Date(apodDayRaw);
+          apodDay.setHours(0,0,0,0);
+          if (apodDay.getTime() == today.getTime()) {
+            console.log('Date match - attempting to use cached apod url');
+            const apodUrl = localStorage.getItem('apodUrl');
+            if (apodUrl) {
+              console.log('Successfully used cached apod url');
+              return apodUrl;
+            }
+          }
+        }
+        const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+        const json = await response.json();
+        const url = json.hdurl;
+        localStorage.setItem('apodDayRaw', today.toString());
+        localStorage.setItem('apodUrl', url);
+        return url;
+      }
+      async function updateBackground() {
+        const url = await getApodUrl();
+        document.body.style.backgroundImage = 'url("' + url + '")';
+      }
+      updateBackground();
     </script>
   </body>
 </html>
