@@ -93,20 +93,18 @@
 
   </head>
   <body>
-    <!-- Used by my site blocking extension https://github.com/mgsloan/intentional-blocker -->
+    <!-- Used by my site blocking extension https://github.com/mgsloan/unblock-with-intent -->
     <div id="blocked"></div>
     <div id="unblock">
-      <form id="unblock-form">
-        <div>
-          What do you intend to do while unblocked?
-          <input id="unblock-reason" type="text"/>
-        </div>
-        <div>
-          For how long?
-          <input id="unblock-time" type="number"/>
-          minutes
-        </div>
-      </form>
+      <div>
+        Unblock intention?
+        <input id="unblock-reason" type="text"/>
+      </div>
+      <div>
+        For how long?
+        <input id="unblock-time" type="number"/>
+        minutes
+      </div>
     </div>
 
     <!-- TODO: re-enable on some sort of start page?
@@ -149,24 +147,6 @@
       }
 
       var urlParams = new URLSearchParams(window.location.search);
-      if (!urlParams.has('pass')) {
-        abort('Expected "pass" query parameter');
-      }
-
-      var passphrase = urlParams.get('pass'),
-          encryptedMsg = '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',
-          encryptedHMAC = encryptedMsg.substring(0, 64),
-          encryptedHTML = encryptedMsg.substring(64),
-          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
-
-      if (decryptedHMAC !== encryptedHMAC) {
-          abort('Bad passphrase!');
-      }
-
-      var plainHTML = decrypt(encryptedHTML, passphrase);
-
-      document.write(plainHTML);
-      document.close()
 
       // Show site unblocking stuff
       if (urlParams.has('blocked')) {
@@ -186,34 +166,51 @@
         };
       }
 
-      // After decrypting, display a random reminder
-      const reminderClass = urlParams.has('work') ? 'work-reminder' : 'reminder';
-      const reminders = document.getElementsByClassName(reminderClass);
-      const randomReminder = reminders[Math.floor(Math.random() * reminders.length)];
-      randomReminder.style.display = 'inline-block';
+      if (urlParams.has('pass')) {
+        var passphrase = urlParams.get('pass'),
+            encryptedMsg = '04dcba0ee4700fc9db26bb66602cccb2a1a574e1e935d7dddccb13c37528977258ffcda4d42d63816dc485d7c2a7561067103302574be7f0ac0909bf3e3ba993SjM+5P9yvr+r9PNOvlsHpMxT6GGm0590WnhjMRzpZuxa9ZKPG2FK5JZ7yHgiKMxpVdVMKNHYq9503PheBi6mk8shB0BM4m321mW3VvZbUaBYBVfV+kAnyu4ekKI1/SfFWcbjmR2y25HQFiXxs5Vg5q7PdcBIiWe1L3+ToIR3DNRzCUhARfDqmSaD7xzZorgC2a6KAPfjM3f0maMx4naayNswT9XMTimn7ax50Bu25x7b0joM0IrSUS1G+8ag3eTY3OhCoKbWi8w4D/NaHs4St67oll0hDuDn7KaJluSaUcbFbPGr8r794aEs7o1BI0SDxCfHMj7RdEE7EFeyDiXE4UohdU39zqyq6V0r9D7gQZrjFIV5oazannqn0tQbjEUREKQB2qHliwsxEgARaLONcKDeGTpqYR2OEvh44iFEKS9NbnjwGZBCxqt29gq+qm1dUo+lHhbkxy9Edr+CJFXr5o5lA35vGWd+2mXYr6W/E9vIOW4QQmOIR5RM+kgvQFNshvAZAyDWDBOC0Lo289PoVNyZVtGTRGKtcxLVNOdj+s3tij8GvTYsBr8YSbnup/my9qZacnwYgCywrjWDb5P18Ggh7GmjqSlPlI5SvkOD2QsXu3Lx4c8rA/OKgifyosCsLZ/pZMQwrwd8xSNxW5PZ6OsgEWUrr7V+lHZ3hj74yDAZyjwykkzUuAkGaMBc+BjdzB73xDWAYczAWacOnCdGkMqEaYTuajdQuKXa9i/JYVmtQqX+/4b0NQNMT78y4MootAhQUuXvm7I6bkJPXaWbdP6BTKnSjAYLactlMuuBmYjXy1QnPWEaAW7yyElpcB7AtL/gOxmAf5/45Ni/ssF0Lu9RghG3qXcIZn5mLhSZplarUWSsTAScj6UQ8RuWe98Ylbx8acgZovuHX59vh0OfMeis/fOqYsbrQWheAgeJoDUzFeSudnF/1I51/llwLye9OWYQSRjSVZlmKxFlU6WXTLyC53V/fdetvywoNCLJxUbpImVcqc8mIrbD8E8gF7oKoSRvCyV0Cw0CV849NuNt+DtW4K1CQVYdt7gKi2dOhFp+RYZs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',
+            encryptedHMAC = encryptedMsg.substring(0, 64),
+            encryptedHTML = encryptedMsg.substring(64),
+            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
-      const prioritiesDiv = document.getElementById('priorities');
-      const focusDiv = document.getElementById('focus');
-      const workFocusDiv = document.getElementById('work-focus');
-      if (urlParams.has('personal')) {
-        prioritiesDiv.style.display = 'inline-block';
-        focusDiv.style.display = 'inline-block';
-      } else if (urlParams.has('work')) {
-        workFocusDiv.style.display = 'inline-block';
-      } else {
-        // This case is for personal account at work.
-        workFocusDiv.style.display = 'inline-block';
-      }
+        if (decryptedHMAC !== encryptedHMAC) {
+            abort('Bad passphrase!');
+        }
 
-      /*
-      var todoistFrame = document.getElementById('todoist-frame');
-      var urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.has('work')) {
-        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2FToday%20%26%20%40Work';
-      } else {
-        todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2Foverdue%20%26%20!assigned%20to%3A%20other%2C%20today%20%26%20!assigned%20to%3A%20other'
+        var plainHTML = decrypt(encryptedHTML, passphrase);
+
+        document.write(plainHTML);
+        document.close()
+
+        // After decrypting, display a random reminder
+        const reminderClass = urlParams.has('work') ? 'work-reminder' : 'reminder';
+        const reminders = document.getElementsByClassName(reminderClass);
+        const randomReminder = reminders[Math.floor(Math.random() * reminders.length)];
+        randomReminder.style.display = 'inline-block';
+
+        const prioritiesDiv = document.getElementById('priorities');
+        const focusDiv = document.getElementById('focus');
+        const workFocusDiv = document.getElementById('work-focus');
+        if (urlParams.has('personal')) {
+            prioritiesDiv.style.display = 'inline-block';
+            focusDiv.style.display = 'inline-block';
+        } else if (urlParams.has('work')) {
+            workFocusDiv.style.display = 'inline-block';
+        } else {
+            // This case is for personal account at work.
+            workFocusDiv.style.display = 'inline-block';
+        }
+
+        /*
+        var todoistFrame = document.getElementById('todoist-frame');
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('work')) {
+            todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2FToday%20%26%20%40Work';
+        } else {
+            todoistFrame.src = 'https://todoist.com/app?r=1574130853#agenda%2Foverdue%20%26%20!assigned%20to%3A%20other%2C%20today%20%26%20!assigned%20to%3A%20other'
+        }
+        */
       }
-      */
 
       async function getApodUrl() {
         const today = new Date();
