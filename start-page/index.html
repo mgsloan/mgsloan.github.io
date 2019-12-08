@@ -37,7 +37,7 @@
         color: white;
       }
 
-      #focus, #work-focus, #priorities, .reminder {
+      #focus, #work-focus, #priorities, .reminder, #blocked, #unblock {
         display: none;
         background: rgba(0, 0, 0, 0.5);
         opacity: 0.9;
@@ -67,10 +67,48 @@
         font-family: serif;
       }
 
+      #blocked, #unblock {
+        font-size: 200%;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        opacity: 1 !important;
+        background: black;
+        z-index: 10;
+      }
+
+      #unblock input {
+        filter: invert(100%);
+        font-size: 120%;
+      }
+
+      #unblock-time {
+        width: 2em;
+      }
+
+      form {
+        margin-block-end: 0
+      }
     </style>
 
   </head>
   <body>
+    <!-- Used by my site blocking extension https://github.com/mgsloan/intentional-blocker -->
+    <div id="blocked"></div>
+    <div id="unblock">
+      <form id="unblock-form">
+        <div>
+          What do you intend to do while unblocked?
+          <input id="unblock-reason" type="text"/>
+        </div>
+        <div>
+          For how long?
+          <input id="unblock-time" type="number"/>
+          minutes
+        </div>
+      </form>
+    </div>
+
     <!-- TODO: re-enable on some sort of start page?
     <div id="agenda-frames">
       <iframe id="todoist-frame"></iframe>
@@ -116,7 +154,7 @@
       }
 
       var passphrase = urlParams.get('pass'),
-          encryptedMsg = '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',
+          encryptedMsg = '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',
           encryptedHMAC = encryptedMsg.substring(0, 64),
           encryptedHTML = encryptedMsg.substring(64),
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
@@ -129,6 +167,24 @@
 
       document.write(plainHTML);
       document.close()
+
+      // Show site unblocking stuff
+      if (urlParams.has('blocked')) {
+        const blockedUrl = urlParams.get('blocked');
+        const blockedDiv = document.getElementById('blocked');
+        blockedDiv.style.display = 'inline-block';
+        blockedDiv.textContent = 'Blocked ' + blockedUrl;
+        document.onkeyup = ev => {
+          if (ev.key === 'u') {
+            document.onkeyup = null;
+            blockedDiv.style.display = 'none';
+            const unblockDiv = document.getElementById('unblock');
+            unblockDiv.style.display = 'inline-block';
+            const reasonInput = document.getElementById('unblock-reason');
+            reasonInput.focus();
+          }
+        };
+      }
 
       // After decrypting, display a random reminder
       const reminderClass = urlParams.has('work') ? 'work-reminder' : 'reminder';
