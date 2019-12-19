@@ -8,7 +8,16 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2019-12-08T00:00:00Z</updated>
+  <updated>2019-12-18T00:00:00Z</updated>
+  
+  <entry>
+    <title>Supine Computing</title>
+    <id>https://mgsloan.com/posts/supine-computing</id>
+    <link href="https://mgsloan.com/posts/supine-computing" rel="alternate"/>
+    <updated>2019-12-18T00:00:00Z</updated>
+    <published>2019-12-18T00:00:00Z</published>
+    <summary>Comfortable computer use while laying down, dealing with back pain. Hammocks!</summary>
+  </entry>
   
   <entry>
     <title>Outdoor Computing with a Deck Desk</title>
