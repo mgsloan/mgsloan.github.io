@@ -8,7 +8,16 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2020-05-02T00:00:00Z</updated>
+  <updated>2020-05-16T00:00:00Z</updated>
+  
+  <entry>
+    <title>Polarizer Glasses for Outdoor Computing</title>
+    <id>https://mgsloan.com/posts/polarizer-glasses</id>
+    <link href="https://mgsloan.com/posts/polarizer-glasses" rel="alternate"/>
+    <updated>2020-05-16T00:00:00Z</updated>
+    <published>2020-05-16T00:00:00Z</published>
+    <summary>I built some variable angle polarizer glasses based on camera optics</summary>
+  </entry>
   
   <entry>
     <title>Laptop Ceiling Suspension</title>
