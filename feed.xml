@@ -8,7 +8,16 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2020-05-16T00:00:00Z</updated>
+  <updated>2021-04-03T00:00:00Z</updated>
+  
+  <entry>
+    <title>Unordered Function Application In Haskell</title>
+    <id>https://mgsloan.com/posts/unordered-apply</id>
+    <link href="https://mgsloan.com/posts/unordered-apply" rel="alternate"/>
+    <updated>2021-04-03T00:00:00Z</updated>
+    <published>2021-04-03T00:00:00Z</published>
+    <summary>Fancy type system tricks to implement type-directed function application.</summary>
+  </entry>
   
   <entry>
     <title>Polarizer Glasses for Outdoor Computing</title>
