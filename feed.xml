@@ -16,7 +16,7 @@
     <link href="https://mgsloan.com/posts/unordered-apply" rel="alternate"/>
     <updated>2021-04-03T00:00:00Z</updated>
     <published>2021-04-03T00:00:00Z</published>
-    <summary>Fancy type system tricks to implement type-directed function application.</summary>
+    <summary>Type system tricks to implement type-directed function application.</summary>
   </entry>
   
   <entry>
