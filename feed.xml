@@ -12,17 +12,17 @@
   
   <entry>
     <title>Polymorphic Type-Directed Function Application</title>
-    <id>https://mgsloan.com/posts/unordered-apply-polymorphic</id>
-    <link href="https://mgsloan.com/posts/unordered-apply-polymorphic" rel="alternate"/>
+    <id>https://mgsloan.com/posts/unordered-apply-polymorphic/</id>
+    <link href="https://mgsloan.com/posts/unordered-apply-polymorphic/" rel="alternate"/>
     <updated>2021-04-06T00:00:00Z</updated>
     <published>2021-04-06T00:00:00Z</published>
-    <summary>GHC plugin to choose a "best-match" argument</summary>
+    <summary>GHC plugin to choose a "best-match" parameter type.</summary>
   </entry>
   
   <entry>
     <title>Unordered Function Application In Haskell</title>
-    <id>https://mgsloan.com/posts/unordered-apply</id>
-    <link href="https://mgsloan.com/posts/unordered-apply" rel="alternate"/>
+    <id>https://mgsloan.com/posts/unordered-apply/</id>
+    <link href="https://mgsloan.com/posts/unordered-apply/" rel="alternate"/>
     <updated>2021-04-03T00:00:00Z</updated>
     <published>2021-04-03T00:00:00Z</published>
     <summary>Type system tricks to implement type-directed function application.</summary>
@@ -30,8 +30,8 @@
   
   <entry>
     <title>Polarizer Glasses for Outdoor Computing</title>
-    <id>https://mgsloan.com/posts/polarizer-glasses</id>
-    <link href="https://mgsloan.com/posts/polarizer-glasses" rel="alternate"/>
+    <id>https://mgsloan.com/posts/polarizer-glasses/</id>
+    <link href="https://mgsloan.com/posts/polarizer-glasses/" rel="alternate"/>
     <updated>2020-05-16T00:00:00Z</updated>
     <published>2020-05-16T00:00:00Z</published>
     <summary>I built some variable angle polarizer glasses based on camera optics!</summary>
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Laptop Ceiling Suspension</title>
-    <id>https://mgsloan.com/posts/suspending-laptops</id>
-    <link href="https://mgsloan.com/posts/suspending-laptops" rel="alternate"/>
+    <id>https://mgsloan.com/posts/suspending-laptops/</id>
+    <link href="https://mgsloan.com/posts/suspending-laptops/" rel="alternate"/>
     <updated>2020-05-02T00:00:00Z</updated>
     <published>2020-05-02T00:00:00Z</published>
     <summary>Using adhesive hangers and adjustable tie-downs to suspend laptops.</summary>
@@ -48,8 +48,8 @@
   
   <entry>
     <title>Tree Based Computing</title>
-    <id>https://mgsloan.com/posts/tree-based-computing</id>
-    <link href="https://mgsloan.com/posts/tree-based-computing" rel="alternate"/>
+    <id>https://mgsloan.com/posts/tree-based-computing/</id>
+    <link href="https://mgsloan.com/posts/tree-based-computing/" rel="alternate"/>
     <updated>2020-03-25T00:00:00Z</updated>
     <published>2020-03-25T00:00:00Z</published>
     <summary>A portable and ergonomic way to use your computer in nature.</summary>
@@ -57,8 +57,8 @@
   
   <entry>
     <title>Deskless Ergonomic Work-From-Home Setups</title>
-    <id>https://mgsloan.com/posts/deskless-ergo-wfh</id>
-    <link href="https://mgsloan.com/posts/deskless-ergo-wfh" rel="alternate"/>
+    <id>https://mgsloan.com/posts/deskless-ergo-wfh/</id>
+    <link href="https://mgsloan.com/posts/deskless-ergo-wfh/" rel="alternate"/>
     <updated>2020-03-25T00:00:00Z</updated>
     <published>2020-03-25T00:00:00Z</published>
     <summary>A few different ideas for comfortably working from home, without a desk.</summary>
@@ -66,8 +66,8 @@
   
   <entry>
     <title>Supine Computing</title>
-    <id>https://mgsloan.com/posts/supine-computing</id>
-    <link href="https://mgsloan.com/posts/supine-computing" rel="alternate"/>
+    <id>https://mgsloan.com/posts/supine-computing/</id>
+    <link href="https://mgsloan.com/posts/supine-computing/" rel="alternate"/>
     <updated>2019-12-18T00:00:00Z</updated>
     <published>2019-12-18T00:00:00Z</published>
     <summary>Comfortable computer use while laying down, dealing with back pain. Hammocks!</summary>
@@ -75,8 +75,8 @@
   
   <entry>
     <title>Outdoor Computing with a Deck Desk</title>
-    <id>https://mgsloan.com/posts/deck-desk</id>
-    <link href="https://mgsloan.com/posts/deck-desk" rel="alternate"/>
+    <id>https://mgsloan.com/posts/deck-desk/</id>
+    <link href="https://mgsloan.com/posts/deck-desk/" rel="alternate"/>
     <updated>2019-12-08T00:00:00Z</updated>
     <published>2019-12-08T00:00:00Z</published>
     <summary>Experiments in outdoor computing, deck desking, and reclined computing.</summary>
@@ -84,8 +84,8 @@
   
   <entry>
     <title>Inspecting Haskell Instance Resolution</title>
-    <id>https://mgsloan.com/posts/inspecting-haskell-instance-resolution</id>
-    <link href="https://mgsloan.com/posts/inspecting-haskell-instance-resolution" rel="alternate"/>
+    <id>https://mgsloan.com/posts/inspecting-haskell-instance-resolution/</id>
+    <link href="https://mgsloan.com/posts/inspecting-haskell-instance-resolution/" rel="alternate"/>
     <updated>2019-09-28T00:00:00Z</updated>
     <published>2019-09-28T00:00:00Z</published>
     <summary>A sketch of how Haskell instance resolution errors could be improved.</summary>
@@ -93,8 +93,8 @@
   
   <entry>
     <title>Listening to podcasts along with music, on Android</title>
-    <id>https://mgsloan.com/posts/android-podcasts-and-music</id>
-    <link href="https://mgsloan.com/posts/android-podcasts-and-music" rel="alternate"/>
+    <id>https://mgsloan.com/posts/android-podcasts-and-music/</id>
+    <link href="https://mgsloan.com/posts/android-podcasts-and-music/" rel="alternate"/>
     <updated>2018-10-04T00:00:00Z</updated>
     <published>2018-10-04T00:00:00Z</published>
     <summary>A couple tips for listening to podcasts and music simultaneously.</summary>
@@ -102,8 +102,8 @@
   
   <entry>
     <title>Computing comfortably at 30,000 feet</title>
-    <id>https://mgsloan.com/posts/comfortable-airplane-computing</id>
-    <link href="https://mgsloan.com/posts/comfortable-airplane-computing" rel="alternate"/>
+    <id>https://mgsloan.com/posts/comfortable-airplane-computing/</id>
+    <link href="https://mgsloan.com/posts/comfortable-airplane-computing/" rel="alternate"/>
     <updated>2018-10-01T00:00:00Z</updated>
     <published>2018-10-01T00:00:00Z</published>
     <summary>How to use a laptop on an airline flight with decent ergonomics.</summary>
@@ -111,8 +111,8 @@
   
   <entry>
     <title>GHCinception: Running GHCi in GHCi</title>
-    <id>https://mgsloan.com/posts/ghcinception</id>
-    <link href="https://mgsloan.com/posts/ghcinception" rel="alternate"/>
+    <id>https://mgsloan.com/posts/ghcinception/</id>
+    <link href="https://mgsloan.com/posts/ghcinception/" rel="alternate"/>
     <updated>2018-07-28T00:00:00Z</updated>
     <published>2018-07-28T00:00:00Z</published>
     <summary>My patches were merged, allowing GHC to be loaded into GHCi and run!</summary>
@@ -120,8 +120,8 @@
   
   <entry>
     <title>A new website!</title>
-    <id>https://mgsloan.com/posts/new-site</id>
-    <link href="https://mgsloan.com/posts/new-site" rel="alternate"/>
+    <id>https://mgsloan.com/posts/new-site/</id>
+    <link href="https://mgsloan.com/posts/new-site/" rel="alternate"/>
     <updated>2018-07-27T00:00:00Z</updated>
     <published>2018-07-27T00:00:00Z</published>
     <summary>A brief introduction to my new site, and how it works.</summary>
