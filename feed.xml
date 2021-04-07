@@ -11,6 +11,15 @@
   <updated>2021-04-06T00:00:00Z</updated>
   
   <entry>
+    <title>Custom Type Errors for Unordered Function Application</title>
+    <id>https://mgsloan.com/posts/unordered-apply-type-errors/</id>
+    <link href="https://mgsloan.com/posts/unordered-apply-type-errors/" rel="alternate"/>
+    <updated>2021-04-06T00:00:00Z</updated>
+    <published>2021-04-06T00:00:00Z</published>
+    <summary>Better type errors via GHC's custom type errors.</summary>
+  </entry>
+  
+  <entry>
     <title>Polymorphic Type-Directed Function Application</title>
     <id>https://mgsloan.com/posts/unordered-apply-polymorphic/</id>
     <link href="https://mgsloan.com/posts/unordered-apply-polymorphic/" rel="alternate"/>
