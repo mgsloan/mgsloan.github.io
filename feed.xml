@@ -8,7 +8,16 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2021-04-03T00:00:00Z</updated>
+  <updated>2021-04-06T00:00:00Z</updated>
+  
+  <entry>
+    <title>Polymorphic Type-Directed Function Application</title>
+    <id>https://mgsloan.com/posts/unordered-apply-polymorphic</id>
+    <link href="https://mgsloan.com/posts/unordered-apply-polymorphic" rel="alternate"/>
+    <updated>2021-04-06T00:00:00Z</updated>
+    <published>2021-04-06T00:00:00Z</published>
+    <summary>GHC plugin to choose a "best-match" argument</summary>
+  </entry>
   
   <entry>
     <title>Unordered Function Application In Haskell</title>
