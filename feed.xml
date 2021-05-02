@@ -38,6 +38,24 @@
   </entry>
   
   <entry>
+    <title>Ergo update: standing desk + treadmill</title>
+    <id>https://mgsloan.com/posts/ergo-update-standing-desk-treadmill/</id>
+    <link href="https://mgsloan.com/posts/ergo-update-standing-desk-treadmill/" rel="alternate"/>
+    <updated>2020-09-12T00:00:00Z</updated>
+    <published>2020-09-12T00:00:00Z</published>
+    <summary>Active sitting stool, suspended drinks, tidying cables.</summary>
+  </entry>
+  
+  <entry>
+    <title>Ergo update: suspending keyboard from ceiling</title>
+    <id>https://mgsloan.com/posts/ergo-update-suspending-keyboard-from-ceiling/</id>
+    <link href="https://mgsloan.com/posts/ergo-update-suspending-keyboard-from-ceiling/" rel="alternate"/>
+    <updated>2020-05-25T00:00:00Z</updated>
+    <published>2020-05-25T00:00:00Z</published>
+    <summary>Experiment in suspending keyboard from fixed points.</summary>
+  </entry>
+  
+  <entry>
     <title>Polarizer Glasses for Outdoor Computing</title>
     <id>https://mgsloan.com/posts/polarizer-glasses/</id>
     <link href="https://mgsloan.com/posts/polarizer-glasses/" rel="alternate"/>
@@ -53,6 +71,15 @@
     <updated>2020-05-02T00:00:00Z</updated>
     <published>2020-05-02T00:00:00Z</published>
     <summary>Using adhesive hangers and adjustable tie-downs to suspend laptops.</summary>
+  </entry>
+  
+  <entry>
+    <title>Ergo update: hammock under deck</title>
+    <id>https://mgsloan.com/posts/ergo-update-hammock-under-deck/</id>
+    <link href="https://mgsloan.com/posts/ergo-update-hammock-under-deck/" rel="alternate"/>
+    <updated>2020-04-25T00:00:00Z</updated>
+    <published>2020-04-25T00:00:00Z</published>
+    <summary>Nice location for a hammock - under a deck!</summary>
   </entry>
   
   <entry>
@@ -116,24 +143,6 @@
     <updated>2018-10-01T00:00:00Z</updated>
     <published>2018-10-01T00:00:00Z</published>
     <summary>How to use a laptop on an airline flight with decent ergonomics.</summary>
-  </entry>
-  
-  <entry>
-    <title>GHCinception: Running GHCi in GHCi</title>
-    <id>https://mgsloan.com/posts/ghcinception/</id>
-    <link href="https://mgsloan.com/posts/ghcinception/" rel="alternate"/>
-    <updated>2018-07-28T00:00:00Z</updated>
-    <published>2018-07-28T00:00:00Z</published>
-    <summary>My patches were merged, allowing GHC to be loaded into GHCi and run!</summary>
-  </entry>
-  
-  <entry>
-    <title>A new website!</title>
-    <id>https://mgsloan.com/posts/new-site/</id>
-    <link href="https://mgsloan.com/posts/new-site/" rel="alternate"/>
-    <updated>2018-07-27T00:00:00Z</updated>
-    <published>2018-07-27T00:00:00Z</published>
-    <summary>A brief introduction to my new site, and how it works.</summary>
   </entry>
   
 </feed>
