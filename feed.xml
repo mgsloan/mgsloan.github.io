@@ -8,7 +8,25 @@
   <author>
     <name>Michael G Sloan</name>
   </author>
-  <updated>2021-04-06T00:00:00Z</updated>
+  <updated>2021-07-08T00:00:00Z</updated>
+  
+  <entry>
+    <title>Ergo update: co-working experiment</title>
+    <id>https://mgsloan.com/posts/ergo-update-coworking/</id>
+    <link href="https://mgsloan.com/posts/ergo-update-coworking/" rel="alternate"/>
+    <updated>2021-07-08T00:00:00Z</updated>
+    <published>2021-07-08T00:00:00Z</published>
+    <summary>A semi-accidental experiment in sitting more (oof, back pain!)</summary>
+  </entry>
+  
+  <entry>
+    <title>Type-Directed Permutation of Function Parameters</title>
+    <id>https://mgsloan.com/posts/reorder-args/</id>
+    <link href="https://mgsloan.com/posts/reorder-args/" rel="alternate"/>
+    <updated>2021-07-07T00:00:00Z</updated>
+    <published>2021-07-07T00:00:00Z</published>
+    <summary>Part three: Variadic functions + unordered application.</summary>
+  </entry>
   
   <entry>
     <title>Custom Type Errors for Unordered Function Application</title>
@@ -125,24 +143,6 @@
     <updated>2019-09-28T00:00:00Z</updated>
     <published>2019-09-28T00:00:00Z</published>
     <summary>A sketch of how Haskell instance resolution errors could be improved.</summary>
-  </entry>
-  
-  <entry>
-    <title>Listening to podcasts along with music, on Android</title>
-    <id>https://mgsloan.com/posts/android-podcasts-and-music/</id>
-    <link href="https://mgsloan.com/posts/android-podcasts-and-music/" rel="alternate"/>
-    <updated>2018-10-04T00:00:00Z</updated>
-    <published>2018-10-04T00:00:00Z</published>
-    <summary>A couple tips for listening to podcasts and music simultaneously.</summary>
-  </entry>
-  
-  <entry>
-    <title>Computing comfortably at 30,000 feet</title>
-    <id>https://mgsloan.com/posts/comfortable-airplane-computing/</id>
-    <link href="https://mgsloan.com/posts/comfortable-airplane-computing/" rel="alternate"/>
-    <updated>2018-10-01T00:00:00Z</updated>
-    <published>2018-10-01T00:00:00Z</published>
-    <summary>How to use a laptop on an airline flight with decent ergonomics.</summary>
   </entry>
   
 </feed>
